@@ -1,0 +1,34 @@
+{
+    "name": "acelot/validator",
+    "description": "Declarative validator for PHP 7",
+    "keywords": ["validator"],
+    "type": "library",
+    "homepage": "https://github.com/acelot/validator",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Valeriy Protopopov",
+            "email": "provaleriy@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Acelot\\Validator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Acelot\\Validator\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit -c phpunit.xml"
+    }
+}
