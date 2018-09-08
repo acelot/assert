@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Exception;
+namespace Acelot\Assert\Exception;
 
-use Acelot\Validator\AssertExceptionInterface;
+use Acelot\Assert\AssertExceptionInterface;
 
 final class EachException extends AbstractAssertException
 {

@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Rule;
+namespace Acelot\Assert\Rule;
 
-use Acelot\Validator\Exception\StringTypeException;
-use Acelot\Validator\AssertInterface;
+use Acelot\Assert\Exception\StringTypeException;
+use Acelot\Assert\AssertInterface;
 
 final class StringType implements AssertInterface
 {

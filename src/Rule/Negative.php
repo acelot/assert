@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Rule;
+namespace Acelot\Assert\Rule;
 
-use Acelot\Validator\Exception\NegativeException;
-use Acelot\Validator\Exception\RuleMisuseException;
-use Acelot\Validator\AssertInterface;
+use Acelot\Assert\Exception\NegativeException;
+use Acelot\Assert\Exception\RuleMisuseException;
+use Acelot\Assert\AssertInterface;
 
 final class Negative implements AssertInterface
 {

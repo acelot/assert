@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Rule;
+namespace Acelot\Assert\Rule;
 
-use Acelot\Validator\Exception\PropertyException;
-use Acelot\Validator\Exception\RuleMisuseException;
-use Acelot\Validator\AssertInterface;
-use Acelot\Validator\AssertExceptionInterface;
+use Acelot\Assert\Exception\PropertyException;
+use Acelot\Assert\Exception\RuleMisuseException;
+use Acelot\Assert\AssertInterface;
+use Acelot\Assert\AssertExceptionInterface;
 
 final class Property implements AssertInterface
 {

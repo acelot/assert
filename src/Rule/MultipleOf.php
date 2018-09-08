@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Rule;
+namespace Acelot\Assert\Rule;
 
-use Acelot\Validator\Exception\MaximumException;
-use Acelot\Validator\Exception\MultipleOfException;
-use Acelot\Validator\Exception\RuleMisuseException;
-use Acelot\Validator\AssertInterface;
+use Acelot\Assert\Exception\MaximumException;
+use Acelot\Assert\Exception\MultipleOfException;
+use Acelot\Assert\Exception\RuleMisuseException;
+use Acelot\Assert\AssertInterface;
 
 final class MultipleOf implements AssertInterface
 {

@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Rule;
+namespace Acelot\Assert\Rule;
 
-use Acelot\Validator\Exception\NullTypeException;
-use Acelot\Validator\AssertInterface;
+use Acelot\Assert\Exception\NullTypeException;
+use Acelot\Assert\AssertInterface;
 
 final class NullType implements AssertInterface
 {

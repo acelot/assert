@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Rule;
+namespace Acelot\Assert\Rule;
 
-use Acelot\Validator\Exception\EqualsException;
-use Acelot\Validator\AssertInterface;
+use Acelot\Assert\Exception\EqualsException;
+use Acelot\Assert\AssertInterface;
 
 final class Equals implements AssertInterface
 {

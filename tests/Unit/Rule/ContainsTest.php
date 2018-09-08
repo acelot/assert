@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Tests\Unit\Rule;
+namespace Acelot\Assert\Tests\Unit\Rule;
 
-use Acelot\Validator\Exception\ContainsException;
-use Acelot\Validator\Exception\RuleMisuseException;
-use Acelot\Validator\Rule\Contains;
-use Acelot\Validator\Tests\Fixtures\IterableClass;
+use Acelot\Assert\Exception\ContainsException;
+use Acelot\Assert\Exception\RuleMisuseException;
+use Acelot\Assert\Rule\Contains;
+use Acelot\Assert\Tests\Fixtures\IterableClass;
 use PHPUnit\Framework\TestCase;
 
 class ContainsTest extends TestCase

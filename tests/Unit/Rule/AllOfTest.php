@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Tests\Unit\Rule;
+namespace Acelot\Assert\Tests\Unit\Rule;
 
-use Acelot\Validator\Exception\AllOfException;
-use Acelot\Validator\Rule\AllOf;
-use Acelot\Validator\Rule\MaxLength;
-use Acelot\Validator\Rule\MinLength;
-use Acelot\Validator\Rule\IsEmpty;
-use Acelot\Validator\Rule\Not;
-use Acelot\Validator\Rule\StringType;
-use Acelot\Validator\AssertExceptionInterface;
+use Acelot\Assert\Exception\AllOfException;
+use Acelot\Assert\Rule\AllOf;
+use Acelot\Assert\Rule\MaxLength;
+use Acelot\Assert\Rule\MinLength;
+use Acelot\Assert\Rule\IsEmpty;
+use Acelot\Assert\Rule\Not;
+use Acelot\Assert\Rule\StringType;
+use Acelot\Assert\AssertExceptionInterface;
 use PHPUnit\Framework\TestCase;
 
 class AllOfTest extends TestCase

@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Rule;
+namespace Acelot\Assert\Rule;
 
-use Acelot\Validator\Exception\AlwaysInvalidException;
-use Acelot\Validator\AssertInterface;
+use Acelot\Assert\Exception\AlwaysInvalidException;
+use Acelot\Assert\AssertInterface;
 
 final class AlwaysInvalid implements AssertInterface
 {

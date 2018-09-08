@@ -1,5 +1,5 @@
 {
-    "name": "acelot/validator",
+    "name": "acelot/assert",
     "description": "Declarative validator for PHP 7",
     "keywords": ["validator"],
     "type": "library",
@@ -20,12 +20,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Acelot\\Validator\\": "src/"
+            "Acelot\\Assert\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Acelot\\Validator\\Tests\\": "tests/"
+            "Acelot\\Assert\\Tests\\": "tests/"
         }
     },
     "scripts": {

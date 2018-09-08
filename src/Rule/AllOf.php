@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Rule;
+namespace Acelot\Assert\Rule;
 
-use Acelot\Validator\Exception\AllOfException;
-use Acelot\Validator\AssertInterface;
-use Acelot\Validator\AssertExceptionInterface;
+use Acelot\Assert\Exception\AllOfException;
+use Acelot\Assert\AssertInterface;
+use Acelot\Assert\AssertExceptionInterface;
 
 class AllOf implements AssertInterface
 {

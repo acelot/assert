@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Tests\Unit\Rule;
+namespace Acelot\Assert\Tests\Unit\Rule;
 
-use Acelot\Validator\Exception\AlwaysInvalidException;
-use Acelot\Validator\Rule\AlwaysInvalid;
-use Acelot\Validator\Tests\Fixtures\ValuesProvider;
+use Acelot\Assert\Exception\AlwaysInvalidException;
+use Acelot\Assert\Rule\AlwaysInvalid;
+use Acelot\Assert\Tests\Fixtures\ValuesProvider;
 use PHPUnit\Framework\TestCase;
 
 class AlwaysInvalidTest extends TestCase

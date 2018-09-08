@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Tests\Unit\Rule;
+namespace Acelot\Assert\Tests\Unit\Rule;
 
-use Acelot\Validator\Rule\{
+use Acelot\Assert\Rule\{
     ArrayType,
     BoolType,
     FloatType,
@@ -12,10 +12,10 @@ use Acelot\Validator\Rule\{
     ScalarType,
     StringType
 };
-use Acelot\Validator\AssertInterface;
-use Acelot\Validator\Tests\Fixtures\IterableClass;
-use Acelot\Validator\AssertExceptionInterface;
-use Acelot\Validator\Tests\Fixtures\ValuesProvider;
+use Acelot\Assert\AssertInterface;
+use Acelot\Assert\Tests\Fixtures\IterableClass;
+use Acelot\Assert\AssertExceptionInterface;
+use Acelot\Assert\Tests\Fixtures\ValuesProvider;
 use PHPUnit\Framework\TestCase;
 
 class TypesTest extends TestCase
@@ -118,7 +118,7 @@ class TypesTest extends TestCase
                 $this->fail();
             } catch (AssertExceptionInterface $e) {
                 $className = array_reverse(explode('\\', $class))[0];
-                $this->assertInstanceOf(sprintf('\\Acelot\\Validator\\Exception\\%sException', $className), $e);
+                $this->assertInstanceOf(sprintf('\\Acelot\\Assert\\Exception\\%sException', $className), $e);
             }
         }
     }

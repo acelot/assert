@@ -1,11 +1,16 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Rule;
+namespace Acelot\Assert\Rule;
 
-use Acelot\Validator\AssertInterface;
+use Acelot\Assert\AssertInterface;
 
 trait RuleNameTrait
 {
+    /**
+     * @param AssertInterface ...$rules
+     *
+     * @return string|string[]
+     */
     public static function getRuleName(AssertInterface ...$rules)
     {
         $names = array_map(function ($rule) {

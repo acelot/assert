@@ -1,4 +1,4 @@
-# Validator
+# Assert
 
 [![Build Status](https://travis-ci.org/acelot/validator.svg?branch=master)](https://travis-ci.org/acelot/validator)
 [![Code Climate](https://img.shields.io/codeclimate/coverage/acelot/validator.svg)](https://codeclimate.com/github/acelot/validator)

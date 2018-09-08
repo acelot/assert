@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Rule;
+namespace Acelot\Assert\Rule;
 
-use Acelot\Validator\Exception\ScalarTypeException;
-use Acelot\Validator\AssertInterface;
+use Acelot\Assert\Exception\ScalarTypeException;
+use Acelot\Assert\AssertInterface;
 
 final class ScalarType implements AssertInterface
 {

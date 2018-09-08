@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Rule;
+namespace Acelot\Assert\Rule;
 
-use Acelot\Validator\Exception\IterableTypeException;
-use Acelot\Validator\AssertInterface;
+use Acelot\Assert\Exception\IterableTypeException;
+use Acelot\Assert\AssertInterface;
 
 final class IterableType implements AssertInterface
 {

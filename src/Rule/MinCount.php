@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Acelot\Validator\Rule;
+namespace Acelot\Assert\Rule;
 
-use Acelot\Validator\Exception\MinLengthException;
-use Acelot\Validator\Exception\RuleMisuseException;
-use Acelot\Validator\AssertInterface;
+use Acelot\Assert\Exception\MinLengthException;
+use Acelot\Assert\Exception\RuleMisuseException;
+use Acelot\Assert\AssertInterface;
 
 final class MinCount implements AssertInterface
 {
