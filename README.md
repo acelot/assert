@@ -14,7 +14,7 @@ Declarative validator for PHP 7. Inspired by [Respect/Validation](https://github
 
 namespace MyNamespace;
 
-use Acelot\Validator\Rule\{
+use Acelot\Assert\Rule\{
     AllOf,
     StringType,
     MinLength,
