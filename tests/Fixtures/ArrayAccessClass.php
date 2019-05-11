@@ -2,7 +2,9 @@
 
 namespace Acelot\Assert\Tests\Fixtures;
 
-class ArrayAccessClass implements \ArrayAccess
+use ArrayAccess;
+
+class ArrayAccessClass implements ArrayAccess
 {
     /**
      * @var array

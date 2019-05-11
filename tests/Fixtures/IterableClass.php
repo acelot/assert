@@ -2,7 +2,9 @@
 
 namespace Acelot\Assert\Tests\Fixtures;
 
-class IterableClass implements \Iterator
+use Iterator;
+
+class IterableClass implements Iterator
 {
     /**
      * @var array

@@ -3,7 +3,7 @@
 namespace Acelot\Assert\Tests\Unit\Rule;
 
 use Acelot\Assert\AssertExceptionInterface;
-use Acelot\Assert\Rule\AlwaysValid;
+use Acelot\Assert\Rule\AlwaysValid\AlwaysValid;
 use Acelot\Assert\Tests\Fixtures\ValuesProvider;
 use PHPUnit\Framework\TestCase;
 

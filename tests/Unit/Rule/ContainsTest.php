@@ -2,9 +2,9 @@
 
 namespace Acelot\Assert\Tests\Unit\Rule;
 
-use Acelot\Assert\Exception\ContainsException;
+use Acelot\Assert\Rule\In\InException;
 use Acelot\Assert\Exception\RuleMisuseException;
-use Acelot\Assert\Rule\Contains;
+use Acelot\Assert\Rule\Contains\Contains;
 use Acelot\Assert\Tests\Fixtures\IterableClass;
 use PHPUnit\Framework\TestCase;
 
@@ -35,7 +35,7 @@ class ContainsTest extends TestCase
             $this->assertTrue(true);
         } catch (RuleMisuseException $e) {
             $this->fail();
-        } catch (ContainsException $e) {
+        } catch (InException $e) {
             $this->fail();
         }
     }
@@ -59,7 +59,7 @@ class ContainsTest extends TestCase
      */
     public function testInvalid($needle, $haystack, bool $strict = true)
     {
-        $this->expectException(ContainsException::class);
+        $this->expectException(InException::class);
         $rule = new Contains($needle, $strict);
 
         try {

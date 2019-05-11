@@ -2,13 +2,13 @@
 
 namespace Acelot\Assert\Tests\Unit\Rule;
 
-use Acelot\Assert\Exception\AllOfException;
-use Acelot\Assert\Rule\AllOf;
-use Acelot\Assert\Rule\MaxLength;
-use Acelot\Assert\Rule\MinLength;
-use Acelot\Assert\Rule\IsEmpty;
-use Acelot\Assert\Rule\Not;
-use Acelot\Assert\Rule\StringType;
+use Acelot\Assert\Rule\AllOf\AllOfException;
+use Acelot\Assert\Rule\AllOf\AllOf;
+use Acelot\Assert\Rule\MaxLength\MaxLength;
+use Acelot\Assert\Rule\MinLength\MinLength;
+use Acelot\Assert\Rule\IsEmpty\IsEmpty;
+use Acelot\Assert\Rule\Not\Not;
+use Acelot\Assert\Rule\StringType\StringType;
 use Acelot\Assert\AssertExceptionInterface;
 use PHPUnit\Framework\TestCase;
 

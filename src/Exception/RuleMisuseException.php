@@ -2,6 +2,8 @@
 
 namespace Acelot\Assert\Exception;
 
-final class RuleMisuseException extends \InvalidArgumentException
+use LogicException;
+
+final class RuleMisuseException extends LogicException
 {
 }

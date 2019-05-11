@@ -2,6 +2,9 @@
 
 namespace Acelot\Assert;
 
-interface AssertExceptionInterface extends \Throwable
+use Throwable;
+
+interface AssertExceptionInterface extends Throwable
 {
+    //public function toArray(): array;
 }

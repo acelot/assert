@@ -2,8 +2,8 @@
 
 namespace Acelot\Assert\Tests\Unit\Rule;
 
-use Acelot\Assert\Exception\AlwaysInvalidException;
-use Acelot\Assert\Rule\AlwaysInvalid;
+use Acelot\Assert\Rule\AlwaysInvalid\AlwaysInvalidException;
+use Acelot\Assert\Rule\AlwaysInvalid\AlwaysInvalid;
 use Acelot\Assert\Tests\Fixtures\ValuesProvider;
 use PHPUnit\Framework\TestCase;
 

@@ -1,9 +1,9 @@
 {
     "name": "acelot/assert",
     "description": "Declarative validator for PHP 7",
-    "keywords": ["validator"],
+    "keywords": ["assert", "assertions", "validator", "validators"],
     "type": "library",
-    "homepage": "https://github.com/acelot/validator",
+    "homepage": "https://github.com/acelot/assert",
     "license": "MIT",
     "authors": [
         {

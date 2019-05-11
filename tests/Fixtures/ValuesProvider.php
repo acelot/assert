@@ -2,6 +2,8 @@
 
 namespace Acelot\Assert\Tests\Fixtures;
 
+use stdClass;
+
 class ValuesProvider
 {
     /**
@@ -17,7 +19,7 @@ class ValuesProvider
             'float' => 0.0,
             'string' => '',
             'array' => [],
-            'object' => new \stdClass(),
+            'object' => new stdClass(),
             'closure' => function () {
                 return true;
             },

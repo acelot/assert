@@ -2,17 +2,15 @@
 
 namespace Acelot\Assert\Tests\Unit\Rule;
 
-use Acelot\Assert\Rule\{
-    ArrayType,
-    BoolType,
-    FloatType,
-    IntType,
-    IterableType,
-    NullType,
-    ScalarType,
-    StringType
-};
 use Acelot\Assert\AssertInterface;
+use Acelot\Assert\Rule\ArrayType\ArrayType;
+use Acelot\Assert\Rule\BooleanType\BooleanType;
+use Acelot\Assert\Rule\FloatType\FloatType;
+use Acelot\Assert\Rule\IntegerType\IntegerType;
+use Acelot\Assert\Rule\IterableType\IterableType;
+use Acelot\Assert\Rule\NullType\NullType;
+use Acelot\Assert\Rule\ScalarType\ScalarType;
+use Acelot\Assert\Rule\StringType\StringType;
 use Acelot\Assert\Tests\Fixtures\IterableClass;
 use Acelot\Assert\AssertExceptionInterface;
 use Acelot\Assert\Tests\Fixtures\ValuesProvider;
@@ -23,26 +21,31 @@ class TypesTest extends TestCase
     public function passProvider()
     {
         return [
-            [ArrayType::class, [
+            [
+                ArrayType::class, [
                 [],
                 [0, 1, 2],
                 ['a' => 1, 'b' => 2, 'c' => 3],
             ]],
-            [BoolType::class, [
+            [
+                BooleanType::class, [
                 true,
                 false,
             ]],
-            [FloatType::class, [
+            [
+                FloatType::class, [
                 PHP_FLOAT_MIN,
                 0.0,
                 PHP_FLOAT_MAX,
             ]],
-            [IntType::class, [
+            [
+                IntegerType::class, [
                 PHP_INT_MIN,
                 0,
                 PHP_INT_MAX,
             ]],
-            [IterableType::class, [
+            [
+                IterableType::class, [
                 [],
                 [0, 1, 2],
                 new IterableClass([]),
@@ -50,17 +53,20 @@ class TypesTest extends TestCase
                     yield 1;
                 })(),
             ]],
-            [ScalarType::class, [
+            [
+                ScalarType::class, [
                 0,
                 0.0,
                 '',
                 true,
             ]],
-            [StringType::class, [
+            [
+                StringType::class, [
                 '',
                 'text'
             ]],
-            [NullType::class, [
+            [
+                NullType::class, [
                 null
             ]],
         ];
@@ -91,9 +97,9 @@ class TypesTest extends TestCase
     {
         return [
             [ArrayType::class, ValuesProvider::getTypesExcept('array')],
-            [BoolType::class, ValuesProvider::getTypesExcept('boolean')],
+            [BooleanType::class, ValuesProvider::getTypesExcept('boolean')],
             [FloatType::class, ValuesProvider::getTypesExcept('float')],
-            [IntType::class, ValuesProvider::getTypesExcept('integer')],
+            [IntegerType::class, ValuesProvider::getTypesExcept('integer')],
             [IterableType::class, ValuesProvider::getTypesExcept('array')],
             [ScalarType::class, ValuesProvider::getTypesExcept('boolean,integer,float,string')],
             [StringType::class, ValuesProvider::getTypesExcept('string')],
@@ -117,8 +123,7 @@ class TypesTest extends TestCase
                 $rule->assert($value);
                 $this->fail();
             } catch (AssertExceptionInterface $e) {
-                $className = array_reverse(explode('\\', $class))[0];
-                $this->assertInstanceOf(sprintf('\\Acelot\\Assert\\Exception\\%sException', $className), $e);
+                $this->assertInstanceOf($class . 'Exception', $e);
             }
         }
     }
